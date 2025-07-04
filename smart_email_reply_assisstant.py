@@ -2,8 +2,8 @@ import streamlit as st
 import requests
 import json
 
-API_KEY = "jdaEaORCg7SJI_zmhCPIW2D9DT80wyY3_PtLMkTeV-Ab"
-PROJECT_ID = "cd9e377c-3c7a-4c55-93b3-9f7c0d2f103a"
+API_KEY = st.secrets["API_KEY"]
+PROJECT_ID = st.secrets["PROJECT_ID"]
 REGION = "us-south"
 API_VERSION = "2023-05-29"
 MODEL_ID = "google/flan-t5-xxl"
