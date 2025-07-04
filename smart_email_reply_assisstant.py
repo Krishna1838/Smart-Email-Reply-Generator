@@ -28,7 +28,12 @@ def generate_email_reply(prompt, tone="polite"):
     }
 
     full_prompt = (
-        f"You are a helpful AI assistant. Write a professional and {tone} reply to the following email:\n\n{prompt}"
+        f"Here is an example of how to respond to an email in a {tone} and professional tone:\n"
+        f"Email: Can we move our meeting to Friday?\n"
+        f"Reply: Sure, Friday works for me. Looking forward to it.\n\n"
+        f"Now respond to this email:\n"
+        f"Email: {prompt}\n"
+        f"Reply:"
     )
 
     payload = {
@@ -36,9 +41,10 @@ def generate_email_reply(prompt, tone="polite"):
         "project_id": PROJECT_ID,
         "input": full_prompt,
         "parameters": {
-            "decoding_method": "greedy",
-            "temperature": 0.7,
-            "max_new_tokens": 150
+            "decoding_method": "sample",
+            "temperature": 0.9,
+            "top_p": 0.9,
+            "max_new_tokens": 300
         }
     }
 
