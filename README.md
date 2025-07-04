@@ -1,4 +1,4 @@
-# 📧 Smart Email Reply Assistant using IBM Watsonx.ai
+# 📧 Smart Email Reply Assistant 
 
 This project is a Streamlit-based AI assistant that generates smart, context-aware email replies using IBM Watsonx foundation models via the `/ml/v1/text/generation` endpoint. It simulates a human-like email response experience and is designed for students and professionals who want quick, polite replies.
 
