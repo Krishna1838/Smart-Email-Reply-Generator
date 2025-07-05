@@ -42,19 +42,8 @@ Best regards,
 Ananya
 
 **Generated Reply:**  
-Hi Ananya,  
 
-I can certainly understand the need for extra time to complete the report. However, I need to ask you a couple of questions.
-
-Does the PAC have a weekly meeting on Thursdays? Do you have any conflicts?
-
-Also, we need to discuss some alternative strategies for the budget process.
-
-For example, if we can turn this report into a presentation for the PAC, could we use a portion of the presentation to address other topics and perhaps have an impact analysis?
-
-Your reply is greatly appreciated.  
-
-Thanks,  
+I'm sorry to hear you have run into delays. I understand that you would like to get the report finalized and submitted by Friday, but I will try to accommodate your request. I can make it by next Wednesday. Let me know if you have any questions.
 
 ---
 
