@@ -28,13 +28,19 @@ def generate_email_reply(prompt, tone="polite"):
     }
 
     full_prompt = (
-        f"Here is an example of how to respond to an email in a {tone} and professional tone:\n"
-        f"Email: Can we move our meeting to Friday?\n"
-        f"Reply: Sure, Friday works for me. Looking forward to it.\n\n"
-        f"Now respond to this email:\n"
-        f"Email: {prompt}\n"
-        f"Reply:"
-    )
+    f"You are a smart and professional email assistant. "
+    f"Your task is to generate a clear, concise, and {tone} reply to the email below.\n\n"
+    
+    f"--- Example ---\n"
+    f"Email: Hi, we were planning to submit the draft by Tuesday, but we're running behind schedule. Can we extend the deadline to Friday?\n"
+    f"Reply: Hi, thanks for letting me know. Yes, Friday works for me. Let’s aim to finalize everything by then.\n\n"
+    
+    f"--- Incoming Email ---\n"
+    f"{prompt}\n\n"
+    
+    f"--- Your Reply ---"
+)
+
 
     payload = {
         "model_id": MODEL_ID,
