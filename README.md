@@ -50,7 +50,7 @@ I'm sorry to hear you have run into delays. I understand that you would like to 
 ## 📸 Screenshots
 
 **App Home Page**  
-![App Input Screenshot](https://github.com/Krishna1838/smart-email-reply-assisstant/blob/main/INPUT.png?raw=true)
+![App Input Screenshot](https://github.com/Krishna1838/Smart-Email-Reply-Generator/blob/main/INPUT.png?raw=true)
 
 **Generated Reply Example**  
 ![App Output Screenshot](https://github.com/Krishna1838/smart-email-reply-assisstant/blob/main/OUTPUT.png?raw=true)
