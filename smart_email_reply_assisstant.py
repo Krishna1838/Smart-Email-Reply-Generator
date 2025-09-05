@@ -5,7 +5,7 @@ import json
 API_KEY = st.secrets["API_KEY"]
 PROJECT_ID = st.secrets["PROJECT_ID"]
 REGION = "us-south"
-MODEL_ID = "google/flan-t5-xxl"
+MODEL_ID = "ibm/granite-13b-instruct-v2"
 API_VERSION = "2023-05-29"
 ENDPOINT = f"https://{REGION}.ml.cloud.ibm.com/ml/v1/text/generation?version={API_VERSION}"
 
@@ -78,3 +78,4 @@ if st.button("🚀 Generate Reply"):
             reply = generate_email_reply(email_input, tone, opinion_input.strip())
         st.subheader("📝 Suggested Reply")
         st.success(reply)
+
