@@ -77,7 +77,7 @@ I'm sorry to hear you have run into delays. I understand that you would like to 
 
 - **Student Name:** Krishna Vardhan Baratam  
 - **College Name:** VIT-AP  
-- **Email:** vardhanbaratam@gmail.com  
+- **Email:** krishnavardhanbaratam248@gmail.com
 
 ---
 
