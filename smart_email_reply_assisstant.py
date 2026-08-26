@@ -36,7 +36,6 @@ def generate_email_reply(user_email, tone="polite", opinion="", api_key=None):
             full_prompt,
             generation_config=genai.types.GenerationConfig(
                 temperature=0.8,
-                max_output_tokens=300,
             )
         )
         return response.text.strip()
