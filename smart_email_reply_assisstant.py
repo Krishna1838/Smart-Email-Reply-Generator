@@ -24,11 +24,10 @@ def generate_email_reply(user_email, tone="polite", opinion="", api_key=None):
         model = genai.GenerativeModel("gemini-3.6-flash")
         
         full_prompt = (
-            f"You are a smart and helpful email assistant. Your task is to generate a clear, {tone} reply to the email below.\n\n"
-            f"{f'Reflect this decision in your response: {opinion}\n\n' if opinion else ''}"
-            f"--- Example ---\n"
-            f"Email: Hi, can we move the meeting to Friday?\n"
-            f"Reply: Sure, Friday works for me. Thanks for the update.\n\n"
+            f"You are a professional email assistant. Generate a clear, {tone} reply to the incoming email.\n\n"
+            f"Stance/Instructions to follow: {opinion if opinion else 'Respond appropriately.'}\n"
+            f"Tone of the reply: {tone}\n\n"
+            f"IMPORTANT: You MUST ensure your reply strictly reflects the user's stance or decision (e.g. if the stance is 'disagree', 'decline', or 'no', you must politely decline or object). Keep the reply concise and professional.\n\n"
             f"--- Incoming Email ---\n{user_email}\n\n"
             f"--- Your Reply ---"
         )
@@ -63,5 +62,3 @@ if st.button("🚀 Generate Reply"):
             reply = generate_email_reply(email_input, tone, opinion_input.strip(), api_key)
         st.subheader("📝 Suggested Reply")
         st.success(reply)
-
-
